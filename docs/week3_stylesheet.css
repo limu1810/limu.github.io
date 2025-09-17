@@ -5,9 +5,69 @@ h1{
     font-size: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color:#2A2B2A;
 }
 
 h2{
   font-family: "deuterium-variable",sans-serif;
-  font-variation-settings: 'wght' 800;
+  font-variation-settings: 'wght' 300;
+  margin-bottom: 15px;
 }
+
+p{
+  font-family: "mostra-nuova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li{
+  font-family: "mostra-nuova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer{
+  margin-top: 400;
+}
+
+nav{
+  display: flex;
+  gap: 10px;
+  font-family: "bc-ludva-slant", sans-serif;
+  font-weight: "200px";
+  font-size: 25px;
+  
+
+}
+
+body{
+   background-color:#F1F0CC;
+        
+  }
+
+/* Style for navigation links */
+        nav a {
+            color: black;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+        }
+
+        /* Visited link style */
+        nav a:visited {
+            color: black;
+        }
+
+        /* Hover effect for individual links */
+        nav a:hover {
+            text-decoration: underline;
+            color: #A30B37;
+            border-radius: 4px;
+        }
+
+        .content {
+            margin: 30px;
+            padding: 20px;
+            border-left: 3px solid #A30B37;
+        }
+
