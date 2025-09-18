@@ -45,7 +45,6 @@ body{
         
   }
 
-/* Style for navigation links */
         nav a {
             color: black;
             text-decoration: none;
@@ -53,18 +52,17 @@ body{
             padding: 5px 10px;
         }
 
-        /* Visited link style */
+      
         nav a:visited {
             color: black;
         }
 
-        /* Hover effect for individual links */
+     
         nav a:hover {
             text-decoration: underline;
             color: #A30B37;
             border-radius: 4px;
         }
-
         .content {
             margin: 30px;
             padding: 20px;
