@@ -24,9 +24,17 @@ let btn = document.querySelector('#theme').addEventListener('click',theme);
 
 function theme(){
     console.log("theme work");
+    setTheme("light");
 }
 
 function setTheme(theme) {
+    let inTheme = theme;
+    if (inTheme == 'dark'){
+        theme == 'light';
+    }
+    else{
+        theme = 'dark';
+    }
     localStorage.setItem('userTheme', theme);
     document.body.className = theme;
 }

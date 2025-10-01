@@ -92,6 +92,12 @@
     grid-row-start: 2;
 }
         
+.light {
+    background-color: whitesmoke;
+}
 
+.dark{
+    background-color: black;
+}
 
 
