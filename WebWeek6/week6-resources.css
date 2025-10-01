@@ -1,0 +1,56 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+}
+
+.div4-hover{
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    height: 200px;
+    width: 150px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-color: w;
+    padding: 5px;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+}
+
+.div6 {
+ grid-column: span 2 / span 2;
+      grid-row: span 4 / span 4;
+      grid-column-start: 4;
+      grid-row-start: 2;
+      position: relative;
+      background-color: #eee;
+      padding: 10px;
+      cursor: pointer;
+}
+
+ .drop-menu {
+      display: none; 
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: wheat;
+      padding: 10px;
+      width: 150px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+        

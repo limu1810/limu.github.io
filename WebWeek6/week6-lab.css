@@ -1,6 +1,0 @@
-.nav-menu{
-    display: grid;
-    grid-template-areas: 
-        "Home" "Schedule" "Contact" "Messages"
-    ;
-}
