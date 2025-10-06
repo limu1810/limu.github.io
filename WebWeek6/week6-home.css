@@ -1,36 +1,170 @@
+
+
 .parent {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: 33vh auto auto;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas: 
-    "home-image  div3"
-    "div2 div4";
-    gap: 8px;
+        "home-image home-image"
+        "content goals-values"
+        "footer footer";
+    min-height: 100vh;
+    gap: 12px;
+    padding: 24px 0;
+    background: #f5f5f5;
+    container-type: inline-size;
 }
-    
-.home-image{
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    width: 500px;
+@container (max-width: 600px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "home-image"
+            "content"
+            "goals-values"
+            "footer";
+        padding: 8px 0;
+        gap: 8px;
+    }
+    .home-image, .content, .goals-values, .footer {
+        padding: 8px 6px;
+        font-size: 1rem;
+    }
+    .home-image img {
+        min-height: 120px;
+        max-height: 220px;
+        object-fit: cover;
+    }
 }
 
+@media screen and (max-width: 900px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "home-image"
+            "content"
+            "goals-values"
+            "footer";
+        padding: 12px 0;
+        gap: 10px;
+    }
+    .home-image, .content, .goals-values, .footer {
+        padding: 12px 8px;
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .parent {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "home-image home-image"
+            "content goals-values"
+            "footer footer";
+        padding: 32px 0;
+        gap: 18px;
+    }
+    .home-image, .content, .goals-values, .footer {
+        padding: 24px 18px;
+        font-size: 1.15rem;
+    }
+}
+
+.dark-theme .parent {
+    background: #181818;
+}
+    
+.home-image {
+    grid-area: home-image;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+}
+.dark-theme .home-image {
+    background: #232323;
+}
+.home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+/* 
 .div2 {
     grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 5;
+} */
+
+.content {
+    grid-area: content;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.dark-theme .content {
+    background: #232323;
+    color: #f1f1f1;
 }
 
-.div3 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 1;
+.content h1 {
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    font-weight: 800;
 }
 
-.div4 {
-    grid-column: span 2 / span 2;
-    grid-row: span 4 / span 4;
-    grid-column-start: 3;
-    grid-row-start: 2;
+.content p {
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    font-weight: 100;
+    line-height: 2.0;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.goals-values {
+    grid-area: goals-values;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.dark-theme .goals-values {
+    background: #232323;
+    color: #f1f1f1;
+}
+.goals-values h2 {
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    font-weight: 800;
+}
+
+.goals-values ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 16px;
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    font-weight: 100;
+    line-height: 2.0;
+    font-size: 18px;
+}
+
+.footer {
+    font-family: "helvetica-neue-lt-pro", sans-serif;
+    font-weight: 100;
+    grid-area: footer;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 8px 12px;
+    text-align: center;
+}
+.dark-theme .footer {
+    background: #232323;
+    color: #f1f1f1;
 }
         
 
