@@ -6,8 +6,8 @@
     popup.id = 'local-data-popup';
     popup.innerHTML = `
       <div class="popup-content">
-        <h3>Notice</h3>
-        <p>This site saves your theme and settings in your browser's local storage for a better experience. No personal data is collected.</p>
+        <h3 style="font-family: 'helvetica-neue-lt-pro', sans-serif;">Notice</h3>
+        <p style="font-family: 'helvetica-neue-lt-pro', sans-serif;">For your convenience this site stores your prefrences in your browsers local storage. No personal data is collected. To clear your local storage on the site see the settings page</p>
         <button id="close-popup">OK</button>
       </div>
     `;
