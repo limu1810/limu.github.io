@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+  <link rel="stylesheet" href="week8-nav.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xva4hnj.css">
+  <link rel="stylesheet" href="week8-events.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="theme.js" defer></script>
+  <script src="week8-nav.js" defer></script>
+  <script src="week8-events.js" defer></script>
+</head>
+<body>
+    <!--Main nav component w hamburger-->
+<nav class="main-nav">
+  <div class="nav-brand">Pickup Volleyball</div>
+  <button class="nav-toggle" aria-label="Toggle navigation menu">
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+  </button>
+  <ul class="nav-menu hide">
+    <a href="week8-lab-home.html" class="btn"><i class="fa fa-home"></i> Home</a>
+    <a href="week8-lab-events.html" class="btn"><i class="fa fa-flag"></i> Events</a>
+    <a href="week8-lab-contact.html" class="btn"><i class="fa fa-envelope"></i> Contact</a>
+    <a href="week8-lab-resources.html" class="btn"><i class="fa fa-bars"></i> Settings</a>
+  </ul>
+</nav>
+
+<div class="Parent">
+  <div class="Title">Upcoming Events</div>
+  <div class="Subtitle">Click on a date to see events</div> 
+  <div class="calendar">
+    <div class="header">
+        <button id="prevBtn">
+        <i class="fa fa-chevron-left"></i>
+        </button>
+      <div class="monthYear" id="monthYear"></div>
+      <button id="nextBtn">
+      <i class="fa fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="days">
+      <div class="day">Mon</div>
+      <div class="day">Tue</div>
+      <div class="day">Wed</div>
+      <div class="day">Thu</div>
+      <div class="day">Fri</div>
+      <div class="day">Sat</div>
+      <div class="day">Sun</div>
+    </div>
+    <div class="dates" id="dates"></div>
+  </div>
+  
+</div>
+</body>
+</html>

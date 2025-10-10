@@ -1,0 +1,3 @@
+This website collects user data to improve the user experience. The collected data includes user info entered into forms and user preferences.
+All of the data collected can be cleared from the settings menu, and any user information will not be used outside the needs of the website without the user's expressed consent. 
+The user data is stored in the browser's local data and can be cleared at any time with a button in the settings menu.
