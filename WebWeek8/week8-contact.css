@@ -1,4 +1,5 @@
 input[type = text], select, textarea {
+    font-family: "helvetica-neue-lt-pro", Helvetica, Arial, sans-serif;
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -9,6 +10,7 @@ input[type = text], select, textarea {
 }
 
 input[type = submit]{
+    font-family: "helvetica-neue-lt-pro", Helvetica, Arial, sans-serif;
     background-color: blue;
     color: white;
     padding: 12px 20px;
@@ -21,7 +23,12 @@ input[type = submit]:hover{
 }
 
 .containter {
+    font-family: "helvetica-neue-lt-pro", Helvetica, Arial, sans-serif;
     border-radius: 5px;
     background-color: white;
     padding: 20px;
+}
+
+label{
+    font-family: "helvetica-neue-lt-pro", Helvetica, Arial, sans-serif;
 }

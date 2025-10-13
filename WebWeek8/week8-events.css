@@ -85,6 +85,29 @@
     color:white;
 }
 
+.events-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.events-header .Title,
+.events-header h1 {
+    font-family: "helvetica-neue-lt-pro", Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.events-header .Subtitle,
+.events-header p {
+    font-family: "helvetica-neue-lt-pro", Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 900px) {
   .calendar {
     max-width: 700px;
