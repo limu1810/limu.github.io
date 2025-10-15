@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .btn {
+            background-color: #4CAF50; 
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 100px;
+            animation-name: button-hover;
+            animation-duration: 0.8s;
+            position: relative;
+            animation-iteration-count: infinite;
+            
+        }
+
+        .btn:hover{
+            background-color: blue;
+            width: 200px;
+        }
+
+        @keyframes button-hover{
+            from{
+                width: 100px;
+            }
+
+            50%{
+               width: 150px;
+            }
+
+            to{
+                width: 100px;
+            }
+        }
+
+    </style>
+
+    <button class="btn">Click Me</button>
+
+</body>
+</html>
