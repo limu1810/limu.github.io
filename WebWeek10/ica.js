@@ -1,8 +1,11 @@
-let triviabtn = document.querySelector("#js-new-quote").addEventListener('click', newTrivia)
+// safe element selection and event wiring
+const triviaBtnEl = document.querySelector("#js-new-quote");
+if (triviaBtnEl) triviaBtnEl.addEventListener('click', newTrivia);
 
 const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion"
 
-let answerBtn = document.querySelector("#js-tweet").addEventListener('click', displayAnswer)
+const answerBtnEl = document.querySelector("#js-tweet");
+if (answerBtnEl) answerBtnEl.addEventListener('click', displayAnswer);
 
 let current ={
     question: "",
@@ -44,3 +47,8 @@ function displayAnswer(){
     const answerTxt = document.querySelector("#js-answer-text");
     answerTxt.textContent = current.answer;
 }
+
+// load a trivia question when the page opens
+window.addEventListener('DOMContentLoaded', () => {
+    newTrivia();
+});
