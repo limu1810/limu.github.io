@@ -35,8 +35,7 @@ html {
   }
   
   .quotes {
-    padding: 20px 50px;
-    min-height: 200px;
+    justify-content: ;
   }
   
   .quote-text {
