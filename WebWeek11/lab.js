@@ -1,4 +1,4 @@
-const apiKey = "dd04e0d59df347d395c7a32080ce06a5";
+const apiKey = "fc51ae1d5782ba2e60ac1a32c7796c4b";
 
 document.getElementById("searchBtn").addEventListener("click",() => {
     const topic = document.getElementById("topicInput").value.trim() || "technology";
@@ -6,7 +6,7 @@ document.getElementById("searchBtn").addEventListener("click",() => {
 })
 
 async function getNews(topic) {
-    const url =  `https://newsapi.org/v2/everything?q=${encodeURIComponent(topic)}&apiKey=${apiKey}`;
+    const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(topic)}&lang=en&max=10&token=${apiKey}`;
      
     try{
 const res = await fetch(url);
