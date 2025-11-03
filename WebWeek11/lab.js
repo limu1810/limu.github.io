@@ -1,15 +1,17 @@
 const apiKey = "fc51ae1d5782ba2e60ac1a32c7796c4b";
 
-document.getElementById("searchBtn").addEventListener("click",() => {
-    const topic = document.getElementById("topicInput").value.trim() || "technology";
-    getNews(topic);
-})
+document.getElementById("searchBtn").addEventListener("click", () => {
+  const topic = document.getElementById("topicInput").value.trim() || "technology";
+  getNews(topic);
+});
 
 async function getNews(topic) {
-    const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(topic)}&lang=en&max=10&token=${apiKey}`;
-     
-    try{
-const res = await fetch(url);
+  const proxy = "https://api.allorigins.win/raw?url=";
+  const targetUrl = `https://gnews.io/api/v4/search?q=${encodeURIComponent(topic)}&lang=en&max=10&token=${apiKey}`;
+  const url = `${proxy}${encodeURIComponent(targetUrl)}`;
+
+  try {
+    const res = await fetch(url);
     const data = await res.json();
 
     const newsContainer = document.getElementById("newsContainer");
@@ -34,4 +36,3 @@ const res = await fetch(url);
     document.getElementById("newsContainer").innerHTML = "<p>Failed to load news.</p>";
   }
 }
-    
