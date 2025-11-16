@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Search</title>
+    <link rel="stylesheet" href="lab.css">
+    <script src="lab.js?v=2" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>News Search</h1>
+        <p>Type in a topic to see the latest news!</p>
+
+        <!-- SEARCH FIRST -->
+        <h2>Search</h2>
+        <div class="search-bar">
+            <input type="text" id="topicInput" placeholder="Enter a search topic...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="newsContainer" class="news-container"></div>
+
+        <hr>
+
+        <!-- FILTERS FOR PAGE-LOAD HEADLINES -->
+        <div class="filters">
+            <select id="countryFilter">
+                <option value="">Any Country</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+                <option value="in">India</option>
+            </select>
+
+            <select id="langFilter">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+
+            <button id="reloadBtn">Reload Headlines</button>
+        </div>
+
+        <h2>Top Headlines</h2>
+        <div id="headlinesContainer" class="news-container"></div>
+    </div>
+</body>
+</html>
+
